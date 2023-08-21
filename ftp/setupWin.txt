@@ -1,0 +1,42 @@
+To set up an FTP user in Windows, you can follow these steps:
+
+1. **Open Control Panel:**
+   Press the `Win + X` keys and select "Control Panel" from the menu.
+
+2. **Navigate to "User Accounts":**
+   Click on "User Accounts" to access user-related settings.
+
+3. **Manage User Accounts:**
+   Under "Make changes to your user account," click on "Manage another account."
+
+4. **Add a New User:**
+   Click on "Add a user account."
+
+5. **Enter User Details:**
+   Fill in the required information for the new user. You can set a username, password, and choose between a Standard user or Administrator.
+
+6. **Create Password (Optional):**
+   If you choose to set a password, you'll need to enter and confirm the password for the new user.
+
+7. **Set up FTP Access:**
+   Since you want to create an FTP user, you'll also need to set up FTP access for them. Follow these additional steps:
+
+   a. Open "Control Panel" again and go to "Administrative Tools."
+   b. Open "Internet Information Services (IIS) Manager."
+   c. In the IIS Manager, navigate to the server node in the left-hand pane.
+   d. Under the server node, find and open "FTP Authentication."
+
+8. **Enable Basic Authentication:**
+   To allow users to log in using FTP, enable "Basic Authentication" from the right-hand pane.
+
+9. **Assign Permissions:**
+   Set the necessary folder permissions for the FTP user to access the specific directory on the server. You can do this by:
+
+   a. Right-clicking on the folder you want to share via FTP.
+   b. Selecting "Properties" and then going to the "Security" tab.
+   c. Adding the FTP user to the list of users and assigning the appropriate permissions (Read, Write, etc.).
+
+10. **Test FTP Access:**
+    You can now test the FTP access by using an FTP client (e.g., FileZilla) and connecting to the server using the newly created user's credentials.
+
+Please note that the exact steps might vary slightly based on the version of Windows you're using. Additionally, using FTP for file transfer is not the most secure option, as data is transferred in plain text. Consider using SFTP or other secure file transfer methods if security is a concern.
